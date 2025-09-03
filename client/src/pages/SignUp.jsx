@@ -141,7 +141,7 @@ export default function SignUp() {
               letterSpacing: 1,
             }}
           >
-            Vingo
+              Caviar
           </h1>
           <p className="text-gray-600 text-center text-lg font-medium">
             Create your account to get <span style={{ color: primaryColor }}>delicious</span> food delivered!

@@ -103,7 +103,7 @@ export default function SignIn() {
               textShadow: "0 2px 8px #ffb34744",
             }}
           >
-            Vingo
+            Caviar
           </h1>
         </div>
         <p className="text-gray-700 mb-8 text-lg font-medium">
