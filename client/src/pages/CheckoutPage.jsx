@@ -7,8 +7,8 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { useNavigate } from "react-router-dom";
-import { serverUrl } from "../App";
-import useCurrentLocation from "../hooks/useCurrentLocation";
+import { serverUrl } from "../App.jsx";
+import useCurrentLocation from "../hooks/useCurrentLocation.jsx";
 
 // 🍕 Add some food illustrations
 const foodImages = [

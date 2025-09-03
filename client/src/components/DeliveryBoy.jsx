@@ -3,9 +3,9 @@ import axios from "axios";
 import { MdLocationOn, MdOutlineCheckCircle, MdFastfood, MdDeliveryDining } from "react-icons/md";
 import { FaRegClock, FaRegCheckCircle } from "react-icons/fa";
 import { useSelector } from "react-redux";
-import Nav from "./Nav";
-import { serverUrl } from "../App";
-import DeliveryBoyTracking from "../pages/DeliveryBoyTracking";
+import Nav from "./Nav.jsx";
+import { serverUrl } from "../App.jsx";
+import DeliveryBoyTracking from "../pages/DeliveryBoyTracking.jsx";
 import {
   BarChart,
   Bar,

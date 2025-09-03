@@ -2,9 +2,9 @@ import axios from 'axios';
 import React from 'react';
 import { FiEdit, FiTrash2 } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
-import { serverUrl } from '../App';
+import { serverUrl } from '../App.jsx';
 import { useDispatch } from 'react-redux';
-import { setShop } from '../redux/userSlice';
+import { setShop } from '../redux/userSlice.js';
 
 export default function OwnerFoodCard({ item}) {
     const navigate=useNavigate()

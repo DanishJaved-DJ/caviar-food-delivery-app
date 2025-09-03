@@ -1,11 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import UserDashboard from '../components/userDashboard'
+import UserDashboard from '../components/UserDashboard.jsx'
 
-import DeliveryBoy from '../components/deliveryBoy'
+import DeliveryBoy from '../components/DeliveryBoy.jsx'
 import { FaUtensils } from "react-icons/fa";
-import OwnerDashboard from '../components/OwnerDashboard';
-import Footer from '../components/Footer';
+import OwnerDashboard from '../components/OwnerDashboard.jsx';
+import Footer from '../components/Footer.jsx';
 function Home() {
     const {userData}=useSelector(state=>state.user)
   return (

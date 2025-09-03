@@ -3,9 +3,9 @@ import { FaPlus } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
 import { MdKeyboardBackspace } from "react-icons/md";
 import axios from "axios";
-import { serverUrl } from "../App";
+import { serverUrl } from "../App.jsx";
 import { useDispatch, useSelector } from "react-redux";
-import { setShop } from "../redux/userSlice";
+import { setShop } from "../redux/userSlice.js";
 
 export default function EditItem() {
   const { shop } = useSelector((state) => state.user);

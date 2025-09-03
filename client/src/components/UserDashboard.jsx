@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Nav from './Nav';
-import { categories } from '../category';
+import Nav from './Nav.jsx';
+import { categories } from '../category.js';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import CategoryCard from './categoryCard';
-import FoodCard from './FoodCard';
+import CategoryCard from './CategoryCard.jsx';
+import FoodCard from './FoodCard.jsx';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setCity } from "../redux/userSlice";
+import { setCity } from "../redux/userSlice.js";
 
 function getCity() {
   const dispatch = useDispatch();

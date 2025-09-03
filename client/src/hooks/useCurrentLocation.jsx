@@ -6,7 +6,7 @@ export default function useCurrentLocation() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const GEOAPIFY_API_KEY = "812d749999de462e9df7ca070383975b"; // apna API key
+  const GEOAPIFY_API_KEY = "812d749999de462e9df7ca070383975b"; 
 
   // Reverse geocode with Geoapify
   const reverseGeocode = async (lat, lng) => {
@@ -61,9 +61,9 @@ export default function useCurrentLocation() {
         setLocation({ lat: null, lng: null });
       },
       {
-        enableHighAccuracy: true, // ✅ GPS chip use kare
-        timeout: 15000,           // ⏱ 15s tak wait karo
-        maximumAge: 60000,        // ✅ 1 min tak cache use karo (performance better)
+        enableHighAccuracy: true, 
+        timeout: 15000,           
+        maximumAge: 60000,       
       }
     );
   };

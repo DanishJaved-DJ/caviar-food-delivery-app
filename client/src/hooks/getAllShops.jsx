@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
-import { serverUrl } from '../App'
+import { serverUrl } from '../App.jsx'
 import { useDispatch } from 'react-redux'
-import { setAllShops, setUserData } from '../redux/userSlice'
+import { setAllShops, setUserData } from '../redux/userSlice.js'
 
 function getAllShops() {
 const dispatch=useDispatch()

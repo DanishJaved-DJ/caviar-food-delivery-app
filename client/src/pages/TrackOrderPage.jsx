@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import { serverUrl } from "../App";
-import UserDeliveryTracking from "../components/userDeliveryTracking";
+import { serverUrl } from "../App.jsx";
+import UserDeliveryTracking from "../components/userDeliveryTracking.jsx";
 import { MdKeyboardBackspace } from "react-icons/md";
 import { FaUtensils, FaMapMarkerAlt, FaUserTie, FaPhoneAlt } from "react-icons/fa";
 const PRIMARY = "#ff4d2d";

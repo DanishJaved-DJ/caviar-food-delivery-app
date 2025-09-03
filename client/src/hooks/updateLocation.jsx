@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
-import { serverUrl } from '../App'
+import { serverUrl } from '../App.jsx'
 import { useDispatch, useSelector } from 'react-redux'
-import {  setShopsOfCity, setUserData } from '../redux/userSlice'
+import {  setShopsOfCity, setUserData } from '../redux/userSlice.js'
 
 function updateLocation() {
 const {userData,socket}=useSelector(state=>state.user)

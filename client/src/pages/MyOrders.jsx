@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { serverUrl } from "../App";
+import { serverUrl } from "../App.jsx";
 import { useDispatch, useSelector } from "react-redux";
-import { setMyOrders } from "../redux/userSlice";
+import { setMyOrders } from "../redux/userSlice.js";
 import { MdKeyboardBackspace } from "react-icons/md";
 import { FaUtensils, FaCheckCircle, FaRegClock } from "react-icons/fa";
 

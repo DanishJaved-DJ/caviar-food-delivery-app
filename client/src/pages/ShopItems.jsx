@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { serverUrl } from "../App";
-import FoodCard from "../components/FoodCard";
+import { serverUrl } from "../App.jsx";
+import FoodCard from "../components/FoodCard.jsx";
 import {
   FaMapMarkerAlt,
   FaUtensils,

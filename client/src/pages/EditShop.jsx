@@ -2,8 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { FaUtensils } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { serverUrl } from "../App";
-import { setShop } from "../redux/userSlice";
+import { serverUrl } from "../App.jsx";
+import { setShop } from "../redux/userSlice.js";
 import { useNavigate } from "react-router-dom";
 import { MdKeyboardBackspace } from "react-icons/md";
 

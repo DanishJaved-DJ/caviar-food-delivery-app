@@ -1,12 +1,12 @@
 import React from 'react'
-import Nav from './Nav'
+import Nav from './Nav.jsx'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { FaUtensils, FaPen, FaPlus } from "react-icons/fa";
-import Footer from './Footer'
-import OwnerFoodCard from './OwnerFoodCard'
+import Footer from './Footer.jsx'
+import OwnerFoodCard from './OwnerFoodCard.jsx'
 import { useEffect } from 'react';
-import { setPendingOrdersCount } from '../redux/userSlice';
+import { setPendingOrdersCount } from '../redux/userSlice.js';
 
 function OwnerDashboard() {
   const { shop, ownerPendingOrders } = useSelector(state => state.user)

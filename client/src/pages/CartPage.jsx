@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FaMinus, FaPlus, FaTrash } from "react-icons/fa";
-import { updateQuantity, removeFromCart } from "../redux/userSlice";
+import { updateQuantity, removeFromCart } from "../redux/userSlice.js";
 import { MdKeyboardBackspace } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
