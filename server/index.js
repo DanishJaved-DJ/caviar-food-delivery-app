@@ -21,7 +21,7 @@ const server = http.createServer(app);
 // ✅ Allow both localhost (dev) and Vercel (prod)
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://caviar-food-delivery-app.vercel.app",
+  "https://caviar-food-delivery-app.vercel.app","https://caviar-food-delivery-mupqf946k-danish-javeds-projects.vercel.app","https://caviar-food-delivery-app-git-main-danish-javeds-projects.vercel.app"
 ];
 
 const io = new Server(server, {
