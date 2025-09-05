@@ -18,36 +18,22 @@ const port = process.env.PORT || 5000;
 const app = express();
 const server = http.createServer(app);
 
-// ✅ Allow both localhost (dev) and Vercel (prod)
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://caviar-food-delivery-app.vercel.app",
-  "https://caviar-food-delivery-mupqf946k-danish-javeds-projects.vercel.app",
-  "https://caviar-food-delivery-app-git-main-danish-javeds-projects.vercel.app"
-];
 
-// ✅ CORS setup for Socket.io
 const io = new Server(server, {
   cors: {
-    origin: allowedOrigins,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    origin: "*",
+    methods: ["GET", "POST"],
     credentials: true,
   },
 });
 app.set("io", io);
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  })
+);
 
-// ✅ CORS setup for Express
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
-
-// ✅ Handle preflight requests explicitly
-app.options("*", cors());
-
-// ✅ Body + cookies parser
 app.use(express.json());
 app.use(cookieParser());
 
