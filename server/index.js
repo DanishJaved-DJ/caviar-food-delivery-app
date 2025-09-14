@@ -18,13 +18,13 @@ const port = process.env.PORT || 5000;
 const app = express();
 const server = http.createServer(app);
 
-// 🔹 Use your frontend URL instead of "*"
-const CLIENT_URL = process.env.CLIENT_URL ;
+// ✅ Allow both localhost (dev) and Vercel (prod)
+const allowedOrigins = "https://caviar-food-delivery-mupqf946k-danish-javeds-projects.vercel.app/";
 
 // ✅ Socket.IO with proper CORS
 const io = new Server(server, {
   cors: {
-    origin: CLIENT_URL,
+    origin: allowedOrigins,
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -34,7 +34,7 @@ app.set("io", io);
 // ✅ Express CORS middleware
 app.use(
   cors({
-    origin: CLIENT_URL,
+    origin: allowedOrigins,
     credentials: true,
   })
 );
