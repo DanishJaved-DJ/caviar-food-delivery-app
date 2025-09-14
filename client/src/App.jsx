@@ -27,7 +27,7 @@ import updateLocation from './hooks/updateLocation.jsx'
 import TrackOrderPage from './pages/TrackOrderPage.jsx'
 import MyDeliveredOrders from './pages/MyDeliveredOrders.jsx'
 import ShopItems from './pages/ShopItems.jsx'
-export const serverUrl="https://caviar-food-delivery-app.onrender.com/"
+export const serverUrl= "http://localhost:8000"
 
 function App() {
   const {userData,allShops,socket}=useSelector(state=>state.user)
