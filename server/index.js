@@ -18,10 +18,9 @@ const port = process.env.PORT || 5000;
 const app = express();
 const server = http.createServer(app);
 
-// ✅ Allow both localhost (dev) and Vercel (prod)
-const allowedOrigins = "https://caviar-food-delivery-mupqf946k-danish-javeds-projects.vercel.app/";
+const allowedOrigins = "https://caviar-food-delivery-mupqf946k-danish-javeds-projects.vercel.app";
 
-// ✅ Socket.IO with proper CORS
+
 const io = new Server(server, {
   cors: {
     origin: allowedOrigins,
@@ -31,7 +30,7 @@ const io = new Server(server, {
 });
 app.set("io", io);
 
-// ✅ Express CORS middleware
+
 app.use(
   cors({
     origin: allowedOrigins,
@@ -42,17 +41,16 @@ app.use(
 app.use(express.json());
 app.use(cookieParser());
 
-// ✅ Routes
+
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
 app.use("/api/shop", shopRouter);
 app.use("/api/item", itemRouter);
 app.use("/api/order", orderRouter);
 
-// ✅ Socket handler
+
 socketHandler(io);
 
-// ✅ Server listen
 server.listen(port, () => {
   console.log(`🚀 Server started at ${port}`);
   connectDb();
